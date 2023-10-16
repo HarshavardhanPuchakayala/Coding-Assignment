@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+   <h1 class="heading">Survey Form</h1>
+    <form id="SurveyForm" class="container">
+        <!--name-->
+        <div class="group">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" placeholder="Enter your First Name" class="Name" id="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" placeholder="Enter your Last Name" id="lastName" class="Name" required>
+            </div>
+        </div>        
+        <!--Date of Birth-->
+        <div class="DOB-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" class="dob" required>
+        </div>
+        <!--country-->
+        <div class="country-group">
+            <label for="country">Country:</label>
+            <select id="country" class="country" required>
+                <option value="" disabled selected>Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Mexico">Mexico</option>
+                <option value="South Korea">South Korea</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Switzerland">Switzerland</option>
+            </select>
+        </div>
+        <!--Gender-->
+        <div class="gender-group">
+            <label class="gender">Gender:</label>
+            <input type="checkbox" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <!--profession-->
+        <div class="profession-group">
+            <label for="profession">Profession:</label>
+            <input type="text" placeholder="Enter your Profession" id="profession" required>
+        </div>
+        <!--Email &Mail-->
+        <div class="group">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your E-Mail" id="email" required class="contact">
+        </div>
+        <div>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" placeholder="Enter your Mobile Number" id="mobile" required class="contact">
+        </div>
+    </div>
+
+       
+        <!--buttons-->
+        <div class="btn-group">
+            <button type="submit" id="submitButton">Submit</button>
+            <button type="reset" id="resetButton">Reset</button>
+        </div>
+    </form>
+    <!--copyrights-->
+    <p class="footer">@<span id="year"> </span>Survey Form. All Rights Reserved | Design by Cloud Vandana</p>
+   <!--popup-->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Form submitted successfully</h3>
+            <p>First Name: <span id="popupFirstName"></span></p>
+            <p>Last Name: <span id="popupLastName"></span></p>
+            <p>Date of Birth: <span id="popupDob"></span></p>
+            <p>Country: <span id="popupCountry"></span></p>
+            <p>Gender: <span id="popupGender"></span></p>
+            <p>Profession: <span id="popupProfession"></span></p>
+            <p>Email: <span id="popupEmail"></span></p>
+            <p>Mobile Number: <span id="popupMobile"></span></p>
+            <button type="button" id="closePopup">Close</button>
+        </div>
+   
+    <script src="index.js"></script>
+
+</body>
+</html>

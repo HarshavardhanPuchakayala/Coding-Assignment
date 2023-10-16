@@ -1,0 +1,205 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #1c92d2;
+    padding: 2rem;
+    position: relative;
+}
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container{
+    border: 2px solid black;
+    width:60%;
+    max-width:500px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 50px;
+    border: none;
+    border-radius: 25px;
+}
+label{
+    font-size: 1.2rem;
+}
+/*Name*/
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Name,.contact{
+    display: flex;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(187, 180, 180);
+    margin:10px 0;
+}
+
+/*DOB*/
+.DOB-group{
+    display: flex;
+    flex-direction: column;
+   
+}
+.dob{
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(187, 180, 180);
+    width: 160px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 8px 0;
+}
+/*country*/
+.country-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.country{
+    padding: 8px 6px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid rgb(187, 180, 180);
+}
+/*gender*/
+.gender-group {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    gap:4px;
+}
+
+.gender-group label {
+   font-size: 1rem;
+    margin-right: 10px;
+}
+.gender-group .gender{
+    font-size: 1.2rem;
+
+}
+/*profession*/
+.profession-group{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+.profession-group input{
+    display: flex;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(187, 180, 180);
+    margin:10px 0;
+    width: 40%;
+}
+/*btn-group*/
+.btn-group{
+    display: flex;
+    border: none;
+    justify-content: center;
+    margin-top: 40px;
+    gap:20px;
+}
+#submitButton{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: green;
+}
+#resetButton{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+}
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+/*popup*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    text-align: center;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 400px;
+}
+.popup-content h3{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(27, 166, 29);
+}
+.popup-content p{
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+    font-weight: 500;
+}
+.popup-content span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.popup-content button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+@media (min-width:590px) {
+    .popup-content {
+        top: 40%;
+        left: 50%;
+    }
+    .group{
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+@media (min-width:800px) {
+    .popup-content {
+        top: 50%;
+    }
+}
